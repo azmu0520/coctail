@@ -1,0 +1,131 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+}
+
+.sideBar {
+  flex: 2;
+  height: 100%;
+  margin-top: 6.5%;
+  border-right: 7px solid rgb(39, border-radius: 20px;33, 33);
+}
+
+.main-content {
+  flex: 6;
+  height: 100%;
+}
+
+.wraper {
+  display: flex;
+  flex-direction: column;
+}
+a {
+  text-decoration: none;
+  color: rgb(20, 19, 19);
+  font-size: 28px;
+  /* white-space: nowrap; */
+  margin-bottom: 1rem;
+  padding: 14px;
+  border-radius: 5px;
+  background: #05aa6d;
+
+  color: #fff;
+}
+
+a:hover {
+  color: #05aa6d;
+  background: #fff !important;
+  cursor: pointer;
+}
+
+.main-content h1 {
+  margin-left: 35%;
+  display: inline-block;
+  background: #05aa6d;
+  padding: 14px;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.introduction {
+  border-bottom: 7px solid #67a7e4;
+  border-radius: 20px;
+  padding-top: 30px;
+}
+
+.introduction h1 {
+  /* margin-left: 35%;
+  display: inline-block;
+  background: #05aa6d; */
+}
+
+.introduction p {
+  font-size: 20px;
+  letter-spacing: 1px;
+  word-spacing: 4px;
+  line-height: 40px;
+  padding: 10px 30px;
+  margin-bottom: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: rgb(252, 252, 252);
+}
+
+.hello-wrd {
+  padding-top: 100px;
+  border-bottom: 7px solid #67a7e4;
+  border-radius: 20px;
+}
+
+.hello-wrd p {
+  font-size: 20px;
+  letter-spacing: 1px;
+  word-spacing: 4px;
+  line-height: 40px;
+  padding: 10px 30px;
+  margin-bottom: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.brief-intro {
+  border-bottom: 7px solid #67a7e4;
+  border-radius: 20px;
+  padding-top: 10%;
+}
+.brief-intro p {
+  font-size: 20px;
+  letter-spacing: 1px;
+  word-spacing: 4px;
+  line-height: 40px;
+  padding: 10px 30px;
+  margin-bottom: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hello-wrd > p > img {
+  width: 100%;
+  padding-bottom: 100px;
+  padding-top: 70px;
+}
+
+.brief-intro p img {
+  width: 100%;
+  padding-bottom: 100px;
+  padding-top: 70px;
+}
+
+.hello-wrd .ddd {
+  width: 40%;
+  padding: 5% 30%;
+
+  padding-left: 30%;
+}
