@@ -2,68 +2,210 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Document</title>
-    <link
-      href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap&subset=cyrillic"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/style.css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Fundamentals Part-1</title>
+    <link rel="stylesheet" href="/style.css" />
   </head>
   <body>
-    <main>
-      <div class="open">Open cart</div>
-      <div class="shop">
-        <div class="product">
-          <div class="product-card">
-            <img src="img/bread.jpg" alt="bread" />
-          </div>
-          <button>Buy!!</button>
-        </div>
-        <div class="product">
-          <div class="product-card">
-            <img src="img/potato.jpg" alt="potato" />
-          </div>
-          <button>Buy!</button>
-        </div>
-        <div class="product">
-          <div class="product-card">
-            <img src="img/yogurt.jpg" alt="yogurt" />
-          </div>
-          <button>Buy!</button>
-        </div>
-        <div class="product">
-          <div class="product-card">
-            <img src="img/blueberry.jpg" alt="blueberry" />
-          </div>
-          <button>Buy!</button>
-        </div>
-        <div class="product">
-          <div class="product-card">
-            <img src="img/honey.jpg" alt="honey" />
-          </div>
-          <button>Buy!</button>
-        </div>
-        <div class="product">
-          <div class="product-card">
-            <img src="img/tomato.jpg" alt="tomato" />
-          </div>
-          <button>Buy!</button>
-        </div>
-        <div class="product">
-          <div class="product-card">
-            <img src="img/strawberries.jpg" alt="strawberries" />
-          </div>
-          <button>Buy!</button>
-        </div>
-        <div class="product">
-          <div class="product-card">
-            <img src="img/broccoli.jpg" alt="broccoli" />
-          </div>
-          <button>Buy!</button>
-        </div>
+    <div class="sideBar">
+      <div class="wraper">
+        <a href="#">1. Introduction</a>
+        <a href="#">2. Hello World!</a>
+        <a href="#">3. A Brief Introduction to JavaScript</a>
+        <a href="#">4. Linking a JavaScript File</a>
+        <a href="#">5. Values and Variables</a>
+        <a href="#">6. Data Types</a>
+        <a href="#">7. let, const and var</a>
+        <a href="#">8. Basic Operators</a>
+        <a href="#">9. Operator Precedence</a>
+        <a href="#">10. Coding Challenge #1</a>
+        <a href="#">11. Strings and Template Literals</a>
+        <a href="#">12. Taking Decisions if else Statements</a>
+        <a href="#">13. Coding Challenge #2</a>
+        <a href="#">14. Type Conversion and Coercion</a>
+        <a href="#">15. Truthy and Falsy Values</a>
+        <a href="#">16. Equality Operators == vs. ===</a>
+        <a href="#">17. Boolean Logic</a>
+        <a href="#">18. Logical Operators</a>
+        <a href="#">19. Coding Challenge #3</a>
+        <a href="#">20. The switch Statement </a>
+        <a href="#">21. Statements and Expressions </a>
+        <a href="#">22. The Conditional (Ternary) Operator </a>
+        <a href="#">23. Coding Challenge #4 </a>
+        <a href="#">24. ES5, ES6+ and ESNext</a>
       </div>
-    </main>
+    </div>
+    <div class="main-content">
+      <div class="introduction">
+        <h1>JavaScript Introduction</h1>
+        <p>
+          Assalomu Aleykum Dasturchilar Bu bo'limda siz JavaScript nima va uning
+          boshlangich tushunchalarini , va javascript web dasturchilar uchun
+          qanday qulayliklar yaratishi haqida o'rganamiz. Ayni vaqtda juda ham
+          kop dasturlash tillari mavjud lekin nega aynan "JavaScript" bu savolga
+          quyidagicha javob beramiz : JavaScript - bu veb-sahifalarda murakkab
+          funktsiyalarni amalga oshirishga imkon beradigan skript yoki
+          dasturlash tili - har safar veb-sahifa u harakatlanib turishdan va
+          statik ma'lumotni namoyish qilishdan ko'ra ko'proq narsani amalga
+          oshirganda - o'z vaqtida tarkib yangilanishlarini, interaktiv
+          xaritalarni, animatsion 2D / 3D grafika, video jukebokslarni siljitish
+          va h.k. Buni yana ham soddaroq qilib tushuntiradigan bo'lsak bu
+          dinamik ravishda yangilanadigan tarkibni yaratish, multimedia-ni
+          boshqarish, rasmlarni jonlantirish va boshqa hamma narsalarga imkon
+          beradigan skript tili hisoblanadi ! Bu standart veb-texnologiyalarning
+          uchinchi qatlami, ulardan ikkitasini (HTML va CSS) biz O'quv
+          maydonining boshqa qismlarida batafsilroq ko'rib chiqdik. Ushbu kurs
+          davomida siz men ko'rsatgan kodlarni men bilan birgalikda o'zingiz ham
+          yozib borishingiz kerak va bu sizga o'rganayotgan bilmmingizni
+          mustahkamlashga katta yordam beradi.Va kurs davomida bo'ladigan barcha
+          savollarga yechim topishga harakat qiling haqiqiy javobni korishdan
+          oldin ozingiz bir necha yo'llarda ishlashga harakat qiling agar shunda
+          ham javob topilmasa mana shu savolga doir mavzuni qaytadan korib
+          chiqing, hech qanday yol bilan ham javob topa olmasangiz yechimga
+          qarang va qanday usul bilan yechilganligiga etibor bering. Agar bu
+          kurs programming bo'yicha o'rganayotgan birinchi kursingiz bo'lsa va
+          siz hamma narsaga birdaniga tushunmayotgan bo'lsangiz har bitta
+          mavzuni tezlik bilan o'zlashtirib olishga va darxon dastur yaratishga
+          harakat qilmang qo'llanmalarni o'qing videoni qaytadan korib chiqing
+          o'rganish davomida biroz time-out lar oling va yana o'rganishda davom
+          eting , faqat va faqat "programming men uchun emas ekan " deb fikir
+          yuritmang albata siz dasturlash yo'lini tanladizmi va maqsadingiz
+          aniqmi bilingki bu ishni siz qila olasiz va yana shunday fikirlar ham
+          paydo bo'ladiki faqat men hato qilyabmanmi deysiz bazida , yoq aslida
+          hamma ham hato qiladi dasturlashda hato qilish bu odatiy hol va hatoki
+          foydalik ham chunki siz anashu hatoni qilmaguningizgacha u narsani
+          hato ekanligini bilmas edingiz. Bu bo'limda sizdan kutiladigan narsa
+          shuki kodni ishlata olishlik yani yechimni chiqarib bera olishlik
+          shuning ozigina holos. Bu yerda siz kod qanday ishlayabdi yoki nima
+          uchun ishlayabdi , nega men tez kod yoza olmayabman shunda o'xshagan
+          savollar bilan vaqtingizni bekor ketgizmang . Odiy uch qoida 1-"Qunt
+          bilan o'rganish" , 2-"Nazariy bilimlarni amalda sinab ko'rish" va
+          3-"O'rgangan bilimlaringizni takrorlash"
+          <img src="/img/why.png" alt="why" />
+          Men ushbu kursni Linux-da yozib oldim, ammo barchasi Windows yoki
+          Mac-da xuddi shu tarzda ishlaydi. Agar biror narsa bo'lmasa
+          kompyuteringizda bo'lishi mumkin, bu boshqa operatsion tizimdan
+          foydalanganingiz uchun emas.Men sizga JavaScript men bilgan eng oson
+          yo'llar bilan tushuntirishga harakat qilamiz qani unda kettink !
+        </p>
+      </div>
+      <div class="hello-wrd">
+        <h1>Hello World</h1>
+        <p>
+          Ortiqcha narsalarga urg'u bermagan holda siz bilan JavaScriptning
+          boshlangich tushunchalarini organishni boshlaymiz. JAVASCRIPT IS A
+          HIGH-LEVEL, OBJECT-ORIENTED, MULTI-PARADIGM PROGRAMMING LANGUAGE.
+          Hozir oson yo'l bilan shuntiraman degan edingku bu nima deyishga
+          shoshilmang ko'z qo'rqoq qo'l botir deganlaridek siz ko'zingizga
+          ishonmang qo'lingizga ishoning , yana bir eslatma JavaScriptda qiyin
+          ko'ringan har bir narsa bu aslida oson! 1- JAVASCRIPT IS A HIGH-LEVEL
+          bu nima degani - Biz JavaScriptni ishlatayotgan vaqtimizda murakkab
+          narsalarga etibor bermasak ham boladi masalan xotirani boshqarish kabi
+          narsalar ichki funktsiyalar va shunga o'xshagan narsalarga. 2 -
+          OBJECT-ORIENTED - Obyektga yo'naltirilgan dasturlash (OOP) yani
+          obyektlar bilan ishlashga moslangan dasturlash tili hisoblanadi. 3-
+          MULTI-PARADIGM PROGRAMMING LANGUAGE - bu bir nechta dasturlash
+          paradigmasiga teng darajada mos keladigan til. Paradigma - bu
+          arxetipik bilim bo'lib, u dasturlar bilan muammolarni hal qilishda
+          fikr yuritish usuli sifatida beriladi. Dasturlash paradigmasi - bu
+          ma'lum bir hisoblash modeliga asoslangan dasturlash uslubi. Masalan,
+          protsessual dasturlash kodlarni protseduralar yoki funktsiyalar orqali
+          tartibga solishga asoslangan. Ob'ektga yo'naltirilgan dasturlash
+          ma'lumotlar va xatti-harakatlar (usullar yoki funktsiyalar) ni qamrab
+          oladigan ob'ektlar orqali kodni tashkil etishga asoslangan.
+          Funktsional dasturlash yana funktsiyalar orqali kodlarni tartibga
+          solishga asoslangan .
+          <img src="/img//javascript.png" alt="javascript" />
+          Dasturlashni o'rganishda eng qiyin narsalardan biri bu siz
+          o'rganishingiz kerak bo'lgan sintaksis emas, balki uni haqiqiy dunyo
+          muammolarini hal qilish uchun qanday qo'llashdir. Siz dasturchi kabi
+          o'ylashni boshlashingiz kerak - bu, odatda, sizning dasturingiz nima
+          qilishi kerakligi haqidagi tavsiflarni ko'rib chiqishni, ushbu
+          narsalarga erishish uchun qanday kod xususiyatlari kerakligini va
+          ularni qanday qilib birgalikda ishlashni o'z ichiga oladi. Buning
+          uchun tirishqoqlik, dasturlash sintaksisida tajriba va qo'shimcha
+          ravishda biroz ijodkorlik kerak. Qancha ko'p kod yozsangiz, shuncha
+          yaxshi natijalarga erishasiz. Sizga "dasturchi miyasi" ni besh
+          daqiqada rivojlantirasiz deb va'da berolmaymiz, ammo biz sizga kurs
+          davomida dasturchi kabi fikr yuritish uchun juda ko'p imkoniyatlar
+          beramiz. Har bir dasturlash tilida bo'lganidek biz sizlar bilan "Hello
+          World" yani "Salom Dunyo" degan so'zni ekranga chiqarish bilan
+          boshlaymiz , buning uchun bizga console deb atalmish dasturlash
+          vositasi kerak boladi. Oldingi darslarda organganimizdek
+          programmamizni Brauzerda ochib olamiz va " Ctrl + Shift + I "
+          tugmalarini birgalikda bosganimizda ekranga inspect tools chiqadi yoki
+          sichqonchaning o'ng tugmasi bosganimizda eng pastki qismmida "inspect"
+          ('tekshirmoq', осмотреть) degan yozuv chiqadi shuni bosamiz va bizga
+          dasturlash vositasi brauzerda ochib beradi .Mana shu yerda
+          javascriptda yozilgan kodlarni korishimiz mumkin
+          <img src="/img/alert.png" alt="" />
+          Cosnoleda "alert('Hello World')" deb yozing va Brauzerni yangilang
+          shunda sizga " " ni ichida yozgan barcha yozuvni chiqarib berganini
+          ko'rasiz.
+          <img src="/img/firstalert.png" alt="" />
+          Endi men sizga javascriptda qilinishi mumkin qilgan bazi bir amallarni
+          ko'rstib beraman , consoleda "let js = "amazing" " deb yozing , yangi
+          qatorga " if(js === 'amazing') alert(`JavaScript is ${js}`)" deb
+          yozing , agar siz imlo hato qilmagan bolsangiz ekranda "JavaScript is
+          amazing" degan yozuvni ko'rishingiz mumkin
+          <img src="/img/amazing.png" alt="" />
+          <img src="/img/if.png" alt="" />
+          Bu yerda bo'lgan amalarni biroz tushuntirib o'tsak "let" keywordi
+          orqali "js" deb nomlangan o'zgaruvchi yaratib oldik va uni 'amazing'
+          ga tenglab qoydik va undan keyin biz kopyuterga shart qo'ydik agar
+          "js" 'amazing' degan qiymatni o'z ichiga olsa bizga "JavaScript is
+          amazing" ni chiqarib ber degan buyruq berdik
+          <br />
+          <br />
+          Yuqorida yozilgan kodlarni nima vazifa bajarishini to'liq shunishingiz
+          shart emas , bu yerda tuzilgan algaritimni mantig'ini (logicni)
+          tushungan bo'lsangiz boladi. Endi sizga savol agar biz "Javascript is
+          boring" deb chiqarmoqchi bo'lsak qanday algaritim ishlatamiz
+          <img src="/img/boring.png" alt="" />
+          Juda ham to'g'ri topdingiz! "js" o'zgaruvchining qiymatini(value)
+          "boring" ga tenglab qoyamiz va shart qo'yishda ham qiymat "boring" ga
+          teng bo'lganda deb yozamiz. Men o'ylaymanki sizni JavaScript bilan
+          bo'lgan birinchi "uchrashuvingiz" sizda unchalik yomon ta'surot
+          qoldirmadi ...
 
-    <script src="js/script.js"></script>
+          <img src="/img/dddd.png" class="ddd" alt="" />
+        </p>
+      </div>
+      <div class="brief-intro">
+        <h1>A Brief Introduction to JavaScript</h1>
+        <p>
+          Yuqorida eslatib o'tganimiz kabi JAVASCRIPT IS A HIGH-LEVEL,
+          OBJECT-ORIENTED, MULTI-PARADIGM PROGRAMMING LANGUAGE ekanligini bilib
+          oldik , Hozirgi maruzamizda veb-sahifalarda va web-applicationlarda
+          javascriptning o'rni qanday ekanligini boshqacha qilib aytganda
+          nimalar uchun javascriptni ishlatishimizni ko'rib chiqamiz. Bu savolga
+          javob berish uchun veb-sahifaning asosiy 3 texnologiyalariga etibor
+          qaratamiz. Ular HTML , CSS , JAVASCRIPT manshu texnologiyalar
+          birgalikda mukammal interaktiv veb-sahifa yaratish hizmat qiladi ,
+          HTML - sahifaning kantentlariga yani yozuvlar , rasmlar tugmalar va
+          barcha veb-sahifadagi kontentlar masul bo'ladi , CSS - veb-sahifaning
+          prezentatsiyasiga qisqa bilib aytganda dezayiniga masul hisoblanadi
+          vanihoyat JavaScript - haqiqiy dasturlash tili hisoblanadi , u
+          veb-sahifaga dinamik va interaktiv effektlar qo'shish uchun , kontent
+          va CSSni boshqarish va yana serverdan ma'lumotlarni yuklash , biz
+          odatda ko'rib organgan haqiqiy veb-sahifalarni yaratish uchun
+          ishlatiladi . Sizga yanada tushunarliroq bo'lishi uchun Komputer
+          Tilini Inson Tiliga o'zgartiramiz . HTML - ot(noun, имя
+          существительное) ifodalaydi , misol uchun "p" tagi paragrafni
+          ifodalaydi va u ot(noun, имя существительное) hisoblanadi. Css -
+          sifat(adjective,имя прилагательное) ifodalaydi chunki u otni tasvirlab
+          keladi ("Umid qilaman o'zbek tili gramatikasini yaxshi bilasiz deb") ,
+          misol uchun " p {color:red} " bu yerda Css "p" tagini qizil ranga
+          aylantiryabdi , "red" sifat(adjective,имя прилагательное) bo'lib
+          ot(noun, имя существительное) ni tasvirlab kelyabdi. Va nihoyat
+          JavaScript - albata fel(verb,глагол) " p.hide();" degani paragrafni
+          berkitib qo'y yani ko'rstamda deb buyruq beryabdi , bu yerda biz amal
+          bajaryabmiz , endi qandaydur tushuncha paydo bo'ldimi , agar shunday
+          bo'lsa men bundan judayam hursandman!
+          <img src="/img/html.png" alt="" />
+        </p>
+      </div>
+    </div>
   </body>
 </html>
