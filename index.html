@@ -204,6 +204,197 @@
           bajaryabmiz , endi qandaydur tushuncha paydo bo'ldimi , agar shunday
           bo'lsa men bundan judayam hursandman!
           <img src="/img/html.png" alt="" />
+
+          Biz dinamik effektlar va veb-ilovalar haqida yuqorida kop gapirdik ,
+          endi haqiqiy misolni ko'rib javascript nimaga qodirligini aniq ko'rib
+          chiqishga navbat yetdi.
+          <img src="/img/twiter.png" alt="" />
+          Bu Twitter sahifasining rasmiy sayti , sayt ochilishi bilanoq juda ham
+          ko'plab funktsiyalar ishga tushmoqda va bu javascriptning nimagalarga
+          qodirligini ko'rsatish uchun ajoyib misol deb o'yladim. Twitter
+          ochilishi bilanoq uchta aylanuvchi spinner yuklanayotganini ko'rasiz u
+          esa javascript ba'zi ma'lumotlarni fondan yuklayotganini anglatadi
+          ,ma'lumotlar kelganda spinnerlarni yashiradi va buning o'rniga
+          yuklangan tarkibni ko'rsatadi . Bu dezain va tarkibni manipulyatsiya
+          qilishning ajoyib namunasidir , bundan tashqari juda ham ko'p sodda
+          dinamik effekt mavjud biz Twitter tugmachani bosganimizda javascript
+          twit xabarnomani ko'rsatishi agar ekranni boshqa qismiga bosadigan
+          bo'lsak twit xabarnoma yo'qolishini kuzatishimiz mumkin. Va yana
+          shunga o'xshagan yuzlab dinamik effektlarni ko'rishimiz mumkin va
+          bularni hammasi javascript tomonidan yaratilgan. Aslida kurs oxiriga
+          kelib siz biz bu erda ko'rgan barcha texnikalarni yaratishingiz mumkin
+          bo'ladi
+          <br />
+          Bilganingizdek Javascript daynemik effektlarni veb-sahifalarga
+          qo'shishga imkon beradi , va hatoki veb-brauzerda to'liq dasturni
+          yaratishga imkon beradi va bu dasturlar biz kundalik haotda
+          ishlatadigan dastrularimiz bilan deyarlik bir xil . Mana shu faktlarga
+          asoslanib JavaScript zamonaviy veb-ishlab chiqishda birinchi o'rinda
+          turadi deya olamiz . Agar siz veb-ishlab chiqarish sanoati bilan
+          tanish bo'lsang Javascript kutibxonalari va frameworklari bilishingiz
+          mumkin , misol uchun , "React" , "Angular" , "Vue" , agar bular haqida
+          bilmasangiz hech qanday muammo yoq . Siz bular haqida bilishingiz
+          kerak bo'lgan narsa shuki ular zamonaviy veb-ilovalar tez va osonroq
+          yollar bilan ishlab chiqarish uchun vosita(tool) holos. Bub yerda
+          muhim narsa shuki hamma framework va kutibxonalar 100% javascriptga
+          asoslanib ishlaydi , bu nima degani - yuqoridagi frameworklarni
+          o'rganish uchun siz javascript bilan juda ham yaxshi "kelisha"
+          olishingiz kerak bo'ladi , 10 qator kod yozishni o'rganib olib
+          frameworklarga otib keta olmaysiz. Va siz tanlagan javascript
+          frameworki kelajakda juda ham mashxur bo'lib ketmasligi mumkin bundan
+          xolatlarni oldiga tayor turish uchun siz javascriptni o'zini juda ham
+          yaxshi bilib olishingiz kerak boladi va kelajakda qanday frameworklar
+          chiqishidan qattiy nazar ularni tezlik bilan o'zlashtirib olasiz.
+          Javascript va veb-brauzer alohida narsalar hisoblanadi , bu degani
+          javascript veb-brauzerdan tashqarida ham ishlay oladi , misol uchun ,
+          javascriptni "nodejs" orqali veb-serverda ham ishlata olamiz va unga
+          hech qanday brauzer kerak bo'lmaydi va bu bizga juda ham ajoyib
+          "BackEnd" dasturlarini yasashimizga imkon beradi . Javascriptni
+          brauzerda ishlatganimizda biz "FrontEnd" qismi uchun ham ishlata
+          olamiz . Ushbu kursda javascriptning nozik va nozik tomonlarini
+          o'rganamiz. Kelgusida "nodejs"ga bag'ishlangan darsliklarni ham
+          chiqarish niyatidamiz va bunda siz javascriptni veb-brauzerdan
+          tashqarida ishlatishni ham o'rganib olasiz
+          <img src="/img/nodejs.png" alt="" />
+        </p>
+      </div>
+      <div class="introduction" id="linking">
+        <h1>Linking a Javascript file</h1>
+        <p>
+          Endlikda siz Javascript nima ekanligini va qanday maqsadlarda uni
+          ishlata olishimizni bildingiz , keling endi maxsus javascirpt
+          fayllarida kod yozishni va brauzerda uni qanday qilib korishni
+          o'rganamiz . Buning uchun siz matin-muharirini(foydalanuvchiga matnni
+          tahrirlashga imkon beradigan tizim yoki dastur.) ochib olishingiz
+          kerak bunda men Vs code maqul ko'raman bunda juda ham ko'p qulay
+          vositalar bor . Vs codeni ochib olgandan so'ng biz birinchi bo'lib
+          "html" fayilni yaratib olamiz , bu bizga nimaga kerak - javascript
+          kodlarini brauzerda ishlatish uchun biz ularni maxsus bir fayllarga
+          ulab olishimiz kerak bo'ladi . Odatda veb-sahifaga JavaScript-ni
+          qo'shishning uchta usuli mavjud:1- JavaScript-ni kodini `script va
+          /script` yorlig'i o'rtasida joylashtirish.2- .Js kengaytmasi bilan
+          tashqi JavaScript faylini yaratish va keyin uni script yorlig'ining
+          src atributi orqali sahifaga yuklash. 3- Onclick, onmouseover,
+          onkeypress, onload va boshqalar kabi maxsus yorliq atributlari
+          yordamida JavaScript kodini to'g'ridan-to'g'ri HTML yorlig'i ichiga
+          joylashtirish. Bularni birma bir ko'rib chiqamiz.
+          <br />
+          <br />
+          <br />
+          Birinchisi - JavaScript-ni kodini `script va /script` yorlig'i
+          o'rtasida joylashtirish - html fayl yaratib olganingizdan keyin uni
+          "body" qismida script tagini ochib va uni ichiga kodlarni yozishni
+          boshlaymiz .
+          <img src="/img/example1.png" alt="" />
+
+          Ikkinchisi - .Js kengaytmasi bilan tashqi JavaScript faylini yaratish
+          va keyin uni script yorlig'ining src atributi orqali sahifaga yuklash
+          - bu holatda ham bizga html fayl kerak boladi lekin biz javascript
+          kodlarini yozish uchun alohida fayl ochib olamiz va uning oxirida doim
+          ".js" bilan tugaydi va bu javascript fayili ekanini bildirib turadi.
+          <img src="/img/misol2.png" alt="" />
+
+          Uchinchi - javascirpt kodlarini har birini html taglari ichiga yozib
+          chiqish. Bularning ichida eng ko'p ishlatiladigan va qulay varianti bu
+          ikkinchisi hisoblanadi chunki , birinchi misolda ham ikkinchi misolda
+          ham kodlarni chalkashib ketishligi juda ham oson hisoblanadi va ular
+          yaxshi praktika hisoblanmaydi
+          <img src="/img/misol3.png" alt="" />
+          Oldingi safar biz javascript kodlarimizni brauzerning o'zida "console"
+          da yozib chiqargan edik , keling bu safar avvalgi kodlarimini vs code
+          orqali yozib ko'ramiz. Har doimgidek html faylimiz ichida script tagi
+          orqali kodlarni yozishni boshlaymiz ,
+          <img src="/img/11.png" alt="" />
+        </p>
+      </div>
+      <div class="introduction" id="variabel">
+        <h1>Linking a Javascript file</h1>
+        <p>
+          Endlikda siz Javascript nima ekanligini va qanday maqsadlarda uni
+          ishlata olishimizni bildingiz , keling endi maxsus javascirpt
+          fayllarida kod yozishni va brauzerda uni qanday qilib korishni
+          o'rganamiz
+        </p>
+      </div>
+      <div class="introduction" id="dataType">
+        <h1>Linking a Javascript file</h1>
+        <p>
+          Endlikda siz Javascript nima ekanligini va qanday maqsadlarda uni
+          ishlata olishimizni bildingiz , keling endi maxsus javascirpt
+          fayllarida kod yozishni va brauzerda uni qanday qilib korishni
+          o'rganamiz
+        </p>
+      </div>
+      <div class="introduction" id="letContVar">
+        <h1>Linking a Javascript file</h1>
+        <p>
+          Endlikda siz Javascript nima ekanligini va qanday maqsadlarda uni
+          ishlata olishimizni bildingiz , keling endi maxsus javascirpt
+          fayllarida kod yozishni va brauzerda uni qanday qilib korishni
+          o'rganamiz
+        </p>
+      </div>
+      <div class="introduction" id="operators">
+        <h1>Linking a Javascript file</h1>
+        <p>
+          Endlikda siz Javascript nima ekanligini va qanday maqsadlarda uni
+          ishlata olishimizni bildingiz , keling endi maxsus javascirpt
+          fayllarida kod yozishni va brauzerda uni qanday qilib korishni
+          o'rganamiz
+        </p>
+      </div>
+      <div class="introduction" id="challenge">
+        <h1>Linking a Javascript file</h1>
+        <p>
+          Endlikda siz Javascript nima ekanligini va qanday maqsadlarda uni
+          ishlata olishimizni bildingiz , keling endi maxsus javascirpt
+          fayllarida kod yozishni va brauzerda uni qanday qilib korishni
+          o'rganamiz
+        </p>
+      </div>
+      <div class="introduction" id="string">
+        <h1>Linking a Javascript file</h1>
+        <p>
+          Endlikda siz Javascript nima ekanligini va qanday maqsadlarda uni
+          ishlata olishimizni bildingiz , keling endi maxsus javascirpt
+          fayllarida kod yozishni va brauzerda uni qanday qilib korishni
+          o'rganamiz
+        </p>
+      </div>
+      <div class="introduction" id="ifElse">
+        <h1>Linking a Javascript file</h1>
+        <p>
+          Endlikda siz Javascript nima ekanligini va qanday maqsadlarda uni
+          ishlata olishimizni bildingiz , keling endi maxsus javascirpt
+          fayllarida kod yozishni va brauzerda uni qanday qilib korishni
+          o'rganamiz
+        </p>
+      </div>
+      <div class="introduction" id="challenge2">
+        <h1>Linking a Javascript file</h1>
+        <p>
+          Endlikda siz Javascript nima ekanligini va qanday maqsadlarda uni
+          ishlata olishimizni bildingiz , keling endi maxsus javascirpt
+          fayllarida kod yozishni va brauzerda uni qanday qilib korishni
+          o'rganamiz
+        </p>
+      </div>
+      <div class="introduction" id="conversion">
+        <h1>Linking a Javascript file</h1>
+        <p>
+          Endlikda siz Javascript nima ekanligini va qanday maqsadlarda uni
+          ishlata olishimizni bildingiz , keling endi maxsus javascirpt
+          fayllarida kod yozishni va brauzerda uni qanday qilib korishni
+          o'rganamiz
+        </p>
+      </div>
+      <div class="introduction" id="truthy">
+        <h1>Linking a Javascript file</h1>
+        <p>
+          Endlikda siz Javascript nima ekanligini va qanday maqsadlarda uni
+          ishlata olishimizni bildingiz , keling endi maxsus javascirpt
+          fayllarida kod yozishni va brauzerda uni qanday qilib korishni
+          o'rganamiz
         </p>
       </div>
     </div>

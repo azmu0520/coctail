@@ -11,7 +11,8 @@ body {
   flex: 2;
   height: 100%;
   margin-top: 6.5%;
-  border-right: 7px solid rgb(39, border-radius: 20px;33, 33);
+  border-right: 7px solid rgb(39, 33, 33);
+  border-radius: 20px;
 }
 
 .main-content {
@@ -36,6 +37,18 @@ a {
   color: #fff;
 }
 
+#linking > p > a {
+  text-decoration: none;
+  color: rgb(20, 19, 19);
+  font-size: 20px;
+  margin-bottom: 0;
+  padding: 0;
+  border-radius: 0;
+  background: white;
+
+  color: #000;
+}
+
 a:hover {
   color: #05aa6d;
   background: #fff !important;
@@ -57,14 +70,9 @@ a:hover {
   padding-top: 30px;
 }
 
-.introduction h1 {
-  /* margin-left: 35%;
-  display: inline-block;
-  background: #05aa6d; */
-}
-
 .introduction p {
   font-size: 20px;
+
   letter-spacing: 1px;
   word-spacing: 4px;
   line-height: 40px;
@@ -74,6 +82,7 @@ a:hover {
   flex-direction: column;
   justify-content: center;
   background: rgb(252, 252, 252);
+  text-indent: 30pt;
 }
 
 .hello-wrd {
@@ -84,6 +93,7 @@ a:hover {
 
 .hello-wrd p {
   font-size: 20px;
+
   letter-spacing: 1px;
   word-spacing: 4px;
   line-height: 40px;
@@ -92,6 +102,8 @@ a:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background: rgb(252, 252, 252);
+  text-indent: 30pt;
 }
 
 .brief-intro {
@@ -101,18 +113,27 @@ a:hover {
 }
 .brief-intro p {
   font-size: 20px;
+
   letter-spacing: 1px;
   word-spacing: 4px;
   line-height: 40px;
-  padding: 10px 30px;
+  padding: 40px 30px;
   margin-bottom: 200px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background: rgb(252, 252, 252);
+  text-indent: 30pt;
 }
 
 .hello-wrd > p > img {
   width: 100%;
+  padding-bottom: 100px;
+  padding-top: 70px;
+}
+
+#linking img {
+  width: 90%;
   padding-bottom: 100px;
   padding-top: 70px;
 }
