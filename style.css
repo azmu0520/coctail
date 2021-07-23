@@ -26,13 +26,11 @@ body {
 }
 a {
   text-decoration: none;
-  color: rgb(20, 19, 19);
   font-size: 28px;
-  /* white-space: nowrap; */
   margin-bottom: 1rem;
   padding: 14px;
   border-radius: 5px;
-  background: #05aa6d;
+  background: linear-gradient(#28b487, #7dd56f);
 
   color: #fff;
 }
@@ -58,7 +56,8 @@ a:hover {
 .main-content h1 {
   margin-left: 35%;
   display: inline-block;
-  background: #05aa6d;
+  background: linear-gradient(#28b487, #7dd56f);
+
   padding: 14px;
   border-radius: 5px;
   color: #fff;
