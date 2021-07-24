@@ -20,6 +20,9 @@ body {
   height: 100%;
 }
 
+.main-content img {
+  border-radius: 5px;
+}
 .wraper {
   display: flex;
   flex-direction: column;
@@ -123,6 +126,11 @@ a:hover {
   justify-content: center;
   background: rgb(252, 252, 252);
   text-indent: 30pt;
+}
+
+#variable img {
+  margin: 20px 0;
+  border-radius: 5px;
 }
 
 .hello-wrd > p > img {
