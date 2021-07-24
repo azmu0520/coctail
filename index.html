@@ -297,7 +297,7 @@
           Uchinchi - javascirpt kodlarini har birini html taglari ichiga yozib
           chiqish. Bularning ichida eng ko'p ishlatiladigan va qulay varianti bu
           ikkinchisi hisoblanadi chunki , birinchi misolda ham ikkinchi misolda
-          ham kodlarni chalkashib ketishligi juda ham oson hisoblanadi va ular
+          ham kodlarni adashib ketishligi juda ham oson hisoblanadi va ular
           yaxshi praktika hisoblanmaydi
           <img src="/img/misol3.png" alt="" />
           Oldingi safar biz Javascript kodlarimizni brauzerning o'zida "console"
@@ -355,7 +355,7 @@
           <img src="/img/js2.png" alt="" />
         </p>
       </div>
-      <div class="introduction" id="variabel">
+      <div class="introduction" id="variable">
         <h1>Values and Variables</h1>
         <p>
           Welcome back! Biz sizlar bilan shu kungacha JavaScriptda boshlangich
@@ -373,21 +373,111 @@
           { let firstName = 'Dilshod' } <br />
           , endi har bir yozilgan kodni tushintirib o'taman , "let" -
           o'zgaruvchilarni elon qilish uchun kalit so'zi hisoblanadi , qachonki
-          biz "let" deb yozadigan bo'lsak kompyuter biladiki biz variabel
-          yaratmoqchi ekanligimizni , "firstName" - variabelning nomi
+          biz "let" deb yozadigan bo'lsak kompyuter biladiki biz variable
+          yaratmoqchi ekanligimizni , "firstName" - variablening nomi
           hisoblanadi va bu yerda biz istagan nomni yozishimiz mumkin ,
-          'Dilshod' - value yani malumot hisoblanadi
-          <img src="/img/2.png" alt="" />
+          'Dilshod' - value yani malumot hisoblanadi , umumiy qilib aytganda biz
+          kompyuter hotirasida o'zgaruvchi elon qildik va manashu o'zgaruvchi
+          ichiga "Dilshod" qiymatini saqlab qo'ydik , qachonki biz "firstName"
+          deb nomlangan o'zgaruvchini chaqiradigan bo'lsak uning ichida
+          "Dilshod" qiymati birgalikda keladi
+          <img src="/img/2.png" alt="" class="img2" />
+          Men odatda o'zgaruvchilarni "quti"ga o'xshataman , tassavur qilamiz
+          omborda juda ham ko'p bo'sh qutilar bor , agar biz ulardan biron
+          birini ishlatmoqchi bo'ladigan bo'lsak uning ustiga yorliq yopishtirib
+          , keyinchalik adashib ketmaslik uchun , ichiga hoxlagan buyumlarimizni
+          solib qo'ysak bo'ladi va qachon sizga quti ichidagi buyum kerak
+          bo'ladigan bo'lsa yorqliq orqali adashmasdan qutini tanlab va uni
+          ichidagi buyumni ishlatishingiz mumkin , dasturlashda ham deyarlik
+          mana shunday malumotlar bazasida juda ham ko'plab o'zgaruvchilar
+          mavjud ulardan birini olib va unga nom berib uning ichiga hoxlagan
+          turdagi malumotlarni joylashingiz mumkin. Tabiy savol paydo bo'ladiki
+          "Dilshod" valuesini to'g'ridan to'g'ri console.log()da yozib qoysak
+          ham bo'lar ediku , ha albata agar siz consoleda "Dilshod"deb yozib
+          qoysangiz ham bir xil natija chiqar edi va bu ko'rinishidan oson ham
+          tuyulishi mumkin , lekin sizda ko'plab so'zlardan tashkil topgan matin
+          bo'lsa va uni turli xil joylarda ishlatishingiz kerak bo'lsachi ,
+          quyidagi misolda uzun tekst berilgan va mana shu textni bir necha
+          joylarda ishlatishimiz kerak , agar biz console.log()ning ichida
+          yozadigan bo'lsak ko'p vaqtni va ortiqcha joyni ham egalaydi va bu
+          kodlarni adashib ketishiga olib keladi
+          <img src="/img/igm3.png" alt="" />
+          Agarda biz kerakli malumotni o'zgaruvchi(variable)larga saqlab olib
+          keyinchalik ularni conosleda chaqiradigan bo'lsak biz yozgan kod
+          shunarlik bo'ladi , kelajakda matin ichidagi biron yozuvni
+          o'zgartiradigan bo'lsak faqatgina variabledagi qiymatni
+          o'zgartirishning o'zi kifoya qiladi
+          <img src="/img/img4png" alt="" />
+          Keling, o'zgaruvchilarni nomlash bo'yicha konvensiyalar va qoidalar
+          haqida gapiraylik, chunki biz o'zgaruvchilarga shunchaki tasodifiy
+          nomlar bermasligimiz kerak, shuning uchun bu o'zgaruvchini bu yerda
+          qanday nomlaganimga etibor bering va bunday nomlash "camel case" deb
+          ataladi, yani bizda bir necha so'zlardan tashkil topgan variable
+          bo'lsa uning dastlabki so'zni kichik harifda va undan keyingi
+          keladigan so'zlarni katta harifda yozamiz bu bizga variable nomlarini
+          o'qishda qulaylik yaratadi , bundan kelib chiqadiki agar bizda bir
+          dona so'zdan tashkil topadigan variable nomi bo'lsa uni kichik
+          hariflarda belgilaymiz . Bundan tashqari variablelarni nomlashda
+          "Ruby" usuli ham mavjud , bu holatda biz variable nomlarini kichik
+          hariflarda yozamiz va har bir so'z orasiga pastki chiziq qo'yamiz ("
+          __ ") , JavaScript variable nomlarini sonlar bilan boshlanishini
+          taqiqlab qo'ygan va buni "Vs codening o'zi ham agohlatirib turadi" ,
+          shunday qilib biz variable nomlarini hariflar bilan sonlar bilan va
+          pastki chiziqlar bilan belgilay olamiz va bundan boshqa har qanday
+          belgilar hato hisoblanadi
+          <img src="/img/camelcase.png" alt="" />
+          Agar biz conosle etibor beradigan bo'lsak bizga "SyntaxError" habrini
+          ko'rsatadi , consoledan kelayotgan habarlani kursning boshidan oqib
+          borish sizga keyinchalik katta bugs(hatolarni) yechishga yordam beradi
+          , bu degani biz kod yozish jarayonida matinlar bilan ishlashda
+          hatolikka yo'l qoydik , agar etibor berib qaraydigan bo'lsak yozuvning
+          o'ng tarafida biz qilgan hato qayerda joylashganini ham korsatib
+          turadi.
+          <br />
+          Bu darslikni yakunlashdan oldin yana bir muhib bir narsani tushuntirib
+          o'taman , o'zgaruvchilarga nom berayotgan vaqtingizda siz ular
+          mantiqiy to'g'ri keladigan nomlarni ham berishingiz kerak boladi va
+          qachonki o'zgaruvchi nomi o'qilganda unda nima saqlanganini bilib
+          olishga oson bo'lishi kerak .
+          <img src="/img/label.png" alt="" />
         </p>
       </div>
 
       <div class="introduction" id="dataType">
-        <h1>Linking a Javascript file</h1>
+        <h1>Data types</h1>
         <p>
-          Endlikda siz Javascript nima ekanligini va qanday maqsadlarda uni
-          ishlata olishimizni bildingiz , keling endi maxsus javascirpt
-          fayllarida kod yozishni va brauzerda uni qanday qilib korishni
-          o'rganamiz
+          O'tkan darsda biz values va variablelarni o'rganib chiqdik ,
+          JavaScriptda va boshqa barcha dasturlash tillarida bo'lganidek
+          ma'lumotlarni turlari mavjud , siz shu vaqtgacha "string" va "number"
+          ma'lumotlarini ko'rdingiz aslida ularning boshqa turlari ham mavjud.
+          Har qanday ma'lumot "Object" ko'rinishida yoki "Primitive" ko'rinishda
+          bo'ladi agar ma'lumot "Object" bo'lmasa u albata "Primitive" malumot
+          hisoblanadi . "Object" malumot - /* let arr = {name:'Azizbek'} */
+          ko'rinishida bo'ladi , ular haqida keyingi darslarimizda to'liqroq
+          malumot berib o'tamiz . "Primitive" malumot deb malumotni oddiy
+          holatiga aytiladi yani hech qanday murakkab belgilarsiz biz
+          o'rganganimizdek bir o'zgaruvchi elon qilib unga valueni biriktirib
+          qo'yilgan holatida
+          <img src="/img/datavalu.png" alt="" />
+          "Primitive" malumot turlari haqida gapiradigan bo'lsak ularni 7ta
+          asosiy turlari mavjud - "string" , "number" , "Boolean" , "Undefined"
+          , "Symbol" , 'Null' , "BigInt" . Keling ular bilan birma bir tanishib
+          chiqamiz . Birinchi bo'lib "number" - raqamlar hisoblanib boshqa
+          dasturlash tillari kabi o'nlik kasirlar uchun alohida va yana to'gri
+          kasirlar uchun alohida malumot turlariga ajralmagan , JavaScriptda
+          barcha raqam turlari uchun bir xil malumot turi ishlatiladi.
+          <img src="/img/num.png" alt="" />g Ikkinchisi "String" - belgilar
+          ketma-ketligi , ular yozuvlarni kiritish uchun ishlatiladi va ularni
+          doim qo'shtirnoq ichida yoziladi , bu narsa JavaScriptni variable
+          nomlari bilan adashib ketmaslik uchun kerak ularni doim qo'shtirnoq
+          ichida yozamiz boladi .
+          <img src="/img/str.png" alt="" />
+          Uchunchisi "Boolean" - mantiqiy malumot turi hisoblanadi va bu ikkita
+          qiymatni o'z ichga oladi "true" va "false" yani "to'g'ri" yoki
+          "noto'g'ri" , tassavur qiling kompyuterga sivet o'chsa "false" agar
+          yoniq bo'lsa "true" malumotni jo'natish uchun biz "Boolean" dan
+          foydalanamiz!
+          <img src="/img/boolean.png" alt="" />
         </p>
       </div>
       <div class="introduction" id="letContVar">
