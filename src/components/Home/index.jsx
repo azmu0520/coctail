@@ -1,8 +1,10 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { FilterInput, Input, Table, Wrap } from './style';
 import axios from 'axios';
 import { Pagination, Space } from 'antd';
 import { useProductContext } from '../../context';
+import { useQuery } from 'react-query';
+import { message } from 'antd';
 
 const Home = () => {
   const { token } = localStorage;
@@ -20,8 +22,11 @@ const Home = () => {
 
   const [{ page, size, total, data }, dispatch] = useProductContext();
   const [filter, setFilter] = useState(data);
-  useEffect(() => {
-    token &&
+  // useEffect(() => {
+  useQuery(
+    ['getProducts', page, size],
+    () =>
+      token &&
       axios({
         url: `${baseUrl}/variations?page=${page}&size=${size}`,
         method: 'GET',
@@ -30,12 +35,24 @@ const Home = () => {
           'Content-Type': 'application/json',
           Accept: 'application/json',
         },
-      }).then((res) => {
-        dispatch({ type: 'setData', payload: res?.data?.items });
-        setFilter(res?.data?.items);
-        dispatch({ type: 'setTotal', payload: res?.data?.total_count });
-      });
-  }, [page, size]);
+      }),
+    {
+      onSuccess: (res) => {
+        if (res?.status) {
+          dispatch({ type: 'setData', payload: res?.data?.items });
+          setFilter(res?.data?.items);
+          dispatch({ type: 'setTotal', payload: res?.data?.total_count });
+        } else {
+          message.error(res?.message || 'Something went wrong!');
+        }
+      },
+      onError: (err) => {
+        message.error(err?.message || 'Something went wrong!');
+      },
+    },
+    {}
+  );
+
   const onShowSizeChange = (current, size) => {
     dispatch({
       type: 'changePage',
@@ -53,14 +70,14 @@ const Home = () => {
 
   const handleChange = (e) => {
     const { value } = e?.target;
-
-    let filtered = data?.sort(function (a, b) {
-      return a?.name.localeCompare(b?.name);
-    });
-    filtered = filtered?.filter((item) => {
+    let filtered = data?.filter((item) => {
       return item?.name.toLowerCase().includes(value.toLowerCase());
     });
-
+    filtered.sort(
+      (a, b) =>
+        a.name.toLowerCase().indexOf(value.toLowerCase()) -
+        b.name.toLowerCase().indexOf(value.toLowerCase())
+    );
     setFilter(filtered);
   };
 
