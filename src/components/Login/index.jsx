@@ -18,7 +18,7 @@ const Login = () => {
       [name]: value,
     });
   };
-  const [loged, setLoged] = useState(localStorage?.token);
+  const [loged] = useState(localStorage?.token);
   const navigate = useNavigate();
   let logIn = async (e) => {
     e.preventDefault();
