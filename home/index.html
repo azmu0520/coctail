@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="/home/css/home.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Philosopher:ital@1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/home/css/best__seller.css" />
+    <title>Coctail</title>
+  </head>
+  <body>
+    <header class="home__header">
+      <div class="swiper swiper1 header__notification__bar">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <h4 class="notification__text">
+              Free domestic shipping on orders over $50
+              <a href="#"> Learn more </a>
+            </h4>
+          </div>
+          <div class="swiper-slide">
+            <h4 class="notification__text">
+              Free domestic shipping on orders over $50
+              <a href="#"> Learn more </a>
+            </h4>
+          </div>
+          <div class="swiper-slide">
+            <h4 class="notification__text">
+              Free domestic shipping on orders over $50
+              <a href="#"> Learn more </a>
+            </h4>
+          </div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+
+      <nav>
+        <div class="mobile__hamburger">
+          <div class="line line1"></div>
+          <div class="line line2"></div>
+          <div class="line line3"></div>
+        </div>
+        <div class="menu">
+          <div class="navList">
+            <a href="#" class="nav-link">shop</a>
+            <a href="#" class="nav-link">about</a>
+            <a href="#" class="nav-link">fun staff</a>
+            <a href="#" class="nav-link">find us</a>
+            <a href="#" class="nav-link">contact</a>
+            <a href="#" class="nav-link">log in</a>
+          </div>
+        </div>
+        <ul class="left__nav">
+          <li class="dropdown__link">
+            <span class="dropbtn"
+              >shop
+              <object
+                data="/assets/icons/arrow_dw.svg"
+                class="select__icon"
+              ></object
+            ></span>
+            <div class="dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+          </li>
+          <li>about</li>
+          <li class="dropdown__link">
+            <span class="dropbtn"
+              >fun staff
+              <object
+                data="/assets/icons/arrow_dw.svg"
+                class="select__icon"
+              ></object
+            ></span>
+            <div class="dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+          </li>
+          <li>find us</li>
+        </ul>
+        <object
+          data="/assets/icons/header__title.svg"
+          class="header__title"
+        ></object>
+        <ul class="right__nav">
+          <li class="language-select">
+            <div class="select__field">
+              <object
+                data="/assets/icons/arrow_dw.svg"
+                class="select__icon"
+              ></object>
+            </div>
+            <div class="select__options hidden">
+              <div class="option">
+                <span class="option__content"
+                  ><img
+                    src="../assets/images/eng-flag.png"
+                    alt=""
+                    class="content__image"
+                  />USA</span
+                >
+              </div>
+              <div class="option">
+                <span class="option__content"
+                  ><img
+                    src="../assets/images/rus_flag.jpg"
+                    class="content__image"
+                    alt=""
+                  />RUS</span
+                >
+              </div>
+              <div class="option">
+                <span class="option__content"
+                  ><img
+                    src="../assets/images/uzb_flag.jpg"
+                    class="content__image"
+                    alt=""
+                  />UZB</span
+                >
+              </div>
+            </div>
+          </li>
+          <li>contacct</li>
+          <li>log in</li>
+          <li class="mobile__cart">
+            <img src="/assets/icons/header__cart.svg" class="nav__cartIcon" />
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="hero__banner">
+      <img src="/assets/images/hero__banner.jpg" class="banner__image" />
+      <div class="banner__content">
+        <div class="content__box">
+          <h5 class="box__subtitle">new arrival</h5>
+          <h1 class="box__title">Lorem ipsum dolor sit amet</h1>
+          <a href="#" class="box__cta">shop new</a>
+        </div>
+      </div>
+    </section>
+    <section class="best__sellers">
+      <h2 class="sellers__title">
+        <div class="swiper-button-prev-seller">
+          <img src="/assets/icons/arrow-long.svg" />
+        </div>
+        Our best sellers
+        <div class="swiper-button-next-seller">
+          <img src="/assets/icons/arrow-long.svg" />
+        </div>
+      </h2>
+      <div class="sellers__list swiper swiper2">
+        <div class="swiper-wrapper">
+          <div class="list__item swiper-slide">
+            <img
+              src="/assets/images/best1.png"
+              alt="best1"
+              class="item__image"
+            />
+            <h3 class="item__title">Lorem, ipsum.</h3>
+            <p class="item__text">
+              Ut enim ad minim veniam, quis nostrud exerp ex ea commodo
+              consequat.
+            </p>
+            <a href="#" class="item__cta">shop now</a>
+          </div>
+          <div class="list__item swiper-slide">
+            <img
+              src="/assets/images/best2.png"
+              alt="best1"
+              class="item__image"
+            />
+            <h3 class="item__title">Consectetur adipiscing</h3>
+            <p class="item__text">
+              Ut enim ad minim veniam, quis nostrud exerp ex ea commodo
+              consequat.
+            </p>
+            <a href="#" class="item__cta">shop now</a>
+          </div>
+          <div class="list__item swiper-slide">
+            <img
+              src="/assets/images/best3.png"
+              alt="best1"
+              class="item__image"
+            />
+            <h3 class="item__title">Consequat</h3>
+            <p class="item__text">
+              Ut enim ad minim veniam, quis nostrud exerp ex ea commodo
+              consequat.
+            </p>
+            <a href="#" class="item__cta">shop now</a>
+          </div>
+          <div class="list__item swiper-slide">
+            <img
+              src="/assets/images/best4.png"
+              alt="best1"
+              class="item__image"
+            />
+            <h3 class="item__title">Commodo</h3>
+            <p class="item__text">
+              Ut enim ad minim veniam, quis nostrud exerp ex ea commodo
+              consequat.
+            </p>
+            <a href="#" class="item__cta">shop now</a>
+          </div>
+        </div>
+      </div>
+      <div class="best__seller__banner">
+        <h5 class="banner__subtitle">/de · swa/</h5>
+        <h2 class="banner__title">
+          Ut enim ad minim veniam, quisnostrud exercitation ullamco
+        </h2>
+        <a href="#" class="banner__cta">About us</a>
+      </div>
+    </section>
+    <script src="/home/js/select.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="/home/js/swiper.js"></script>
+  </body>
+</html>
