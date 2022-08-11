@@ -28,3 +28,14 @@ const swiper2 = new Swiper('.swiper2', {
     prevEl: '.swiper-button-prev-seller',
   },
 });
+
+const swiper3 = new Swiper('.mySwiper3', {
+  direction: 'horizontal',
+  slidesPerView: 'auto',
+
+  pagination: {
+    el: '.swiper-pagination',
+    type: 'bullets',
+    clickable: true,
+  },
+});
