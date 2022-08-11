@@ -1,0 +1,161 @@
+:root {
+  --primaryBgColor: '#FFE9D5';
+  --secondaryBgColor: '#FFFBF7';
+  --primaryFont: 'Montserrat';
+  --secondaryFont: 'Philosopher', sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: var(--primaryFont), sans-serif;
+  font-style: normal;
+}
+
+.press__section {
+  display: flex;
+  /* align-items: center; */
+  width: 100%;
+  background: #fffbf6;
+  height: 400px;
+  /* justify-content: space-evenly; */
+}
+
+.press__item {
+  width: 480px;
+  padding: 40px 80px;
+  max-height: 332px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.item__sign,
+.item__sign-reverse {
+  width: 19px;
+  height: 16px;
+}
+
+.item__sign-reverse {
+  transform: rotate(180deg);
+}
+
+.press__wrapper {
+  align-items: center;
+  /* padding: 40px 80px; */
+}
+
+.press__text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 170%;
+  text-align: center;
+  color: #000000;
+  margin: 24px 0;
+}
+
+.item__logo {
+  width: 106px;
+  height: 40px;
+  margin-top: 40px;
+}
+
+/*  ------------------------------------ BANNER ------------------------------------ */
+
+.press__banner__wrap {
+  display: flex;
+  align-items: center;
+
+  justify-content: space-between;
+  padding: 51px 81px 59px 80px;
+}
+
+.banner--description {
+  display: flex;
+  max-width: 600px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding-right: 40px;
+}
+
+.desc__title {
+  font-family: 'Philosopher';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 64px;
+  text-align: center;
+  color: #000000;
+  padding: 8px 0 16px 0;
+}
+
+.desc__subtitle {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.desc__text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 170%;
+  color: #000000;
+}
+
+.desc__cta {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #000000;
+  padding-top: 22px;
+}
+
+.banner--image {
+  /* flex: 1; */
+  max-width: 100%;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #bb6b1e;
+}
+
+@media (max-width: 1200px) {
+  .press__banner__wrap {
+    flex-direction: column-reverse;
+    padding: 24px 16px 47px 16px;
+  }
+  .banner--image {
+    margin-bottom: 30px;
+  }
+  .banner--description {
+    align-items: center;
+    padding-right: 0px;
+  }
+  .desc__title {
+    font-size: 30px;
+    line-height: 64px;
+    padding: 0;
+  }
+  .desc__text {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 170%;
+  }
+  .press__item {
+    padding: 40px 16px;
+
+    max-width: 343px;
+    /* max-height: 208px; */
+  }
+  .press__wrapper {
+    padding: 40px 0;
+  }
+}

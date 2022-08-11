@@ -1,0 +1,14 @@
+:root {
+  --primaryBgColor: '#FFE9D5';
+  --secondaryBgColor: '#FFFBF7';
+  --primaryFont: 'Montserrat';
+  --secondaryFont: 'Philosopher', sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: var(--primaryFont), sans-serif;
+  font-style: normal;
+}
