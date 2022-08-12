@@ -1,0 +1,47 @@
+:root {
+  --primaryBgColor: '#FFE9D5';
+  --secondaryBgColor: '#FFFBF7';
+  --primaryFont: 'Montserrat';
+  --secondaryFont: 'Philosopher', sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: var(--primaryFont), sans-serif;
+  font-style: normal;
+}
+
+.breadcrumb {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  height: 40px;
+  padding: 0 40px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 170%;
+  color: #000000;
+  margin-right: 8px;
+  border-top: 1px solid #cbcbcb;
+  border-bottom: 1px solid #cbcbcb;
+}
+
+.breadcrumb span {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 170%;
+  color: #000000;
+  opacity: 0.5;
+}
+
+.plp__title {
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 64px;
+  text-align: center;
+  color: #000000;
+  font-weight: var(--secondaryFont);
+  padding: 40px 0 62px;
+}

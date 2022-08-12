@@ -15,9 +15,150 @@
 
 footer {
   width: 100%;
-  height: 394px;
+  min-height: 394px;
   background: #000;
+  width: 100%;
+  padding: 80px 0 24px 0;
+}
+.footer__wrap {
   max-width: 1400px;
   margin: 0 auto;
-  padding: 80px 0 24px 0;
+}
+.footer__info {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.info__newsletter__wrap {
+  display: flex;
+  flex-direction: column;
+  width: 480px;
+  align-items: flex-start;
+}
+
+.newsletter__title {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 39px;
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+.newsletter__subtitle {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 170%;
+  color: #7d7d7d;
+}
+.newsletter__input {
+  width: 100%;
+  height: 60px;
+  background: transparent;
+  border: 1px solid #7d7d7d;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 170%;
+  color: #7d7d7d;
+  opacity: 0.5;
+  padding: 18px 24px;
+  margin: 16px 0 24px 0;
+}
+.newsletter__medias {
+  display: flex;
+  align-items: center;
+  min-width: fit-content;
+}
+
+.medias__icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 16px;
+}
+
+.newsletter__input__wrap {
+  display: flex;
+  position: relative;
+  min-width: 100%;
+}
+
+.input__icon {
+  position: absolute;
+  top: 0;
+  color: red;
+  width: 10px;
+}
+
+.explore__wrap {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  min-width: fit-content;
+}
+.explore__wrap li {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 170%;
+  color: #7d7d7d;
+  margin-bottom: 8px;
+}
+
+.wrap__head {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #ffffff !important;
+  margin-bottom: 17px;
+}
+
+.footer__links {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-top: 83px;
+  flex-wrap: wrap;
+  padding: 0 16px;
+}
+
+.links__sp {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #eae5dd;
+}
+
+.links__year {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 170%;
+  color: #ffffff;
+  margin: 0 10px;
+}
+
+.pp__links {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 170%;
+  color: #7d7d7d;
+}
+@media (max-width: 800px) {
+  .footer {
+    padding: 40px 16px 16px 16px;
+  }
+  .newsletter__input {
+    width: 90%;
+  }
+  .info__newsletter__wrap {
+    margin-bottom: 24px;
+  }
+  .explore__wrap {
+    min-width: 50%;
+    margin-bottom: 24px;
+  }
+  .footer__links {
+    margin-top: 57px;
+  }
 }
