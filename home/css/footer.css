@@ -146,7 +146,7 @@ footer {
 }
 @media (max-width: 800px) {
   .footer {
-    padding: 40px 16px 16px 16px;
+    padding: 40px 16px 16px 16px !important;
   }
   .newsletter__input {
     width: 90%;

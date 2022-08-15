@@ -45,3 +45,10 @@
   font-weight: var(--secondaryFont);
   padding: 40px 0 62px;
 }
+
+@media (max-width: 800px) {
+  .plp__title {
+    font-size: 40px;
+    line-height: 45px;
+  }
+}
