@@ -1,0 +1,130 @@
+:root {
+  --primaryBgColor: '#FFE9D5';
+  --secondaryBgColor: '#FFFBF7';
+  --primaryFont: 'Montserrat';
+  --secondaryFont: 'Philosopher', sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: var(--primaryFont), sans-serif;
+  font-style: normal;
+}
+
+.additional__products {
+  display: flex;
+  width: 100%;
+}
+
+.product__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  max-height: 674px;
+}
+
+.grid__row {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  /* height: fit-content; */
+  padding: 43px 50px 25px 50px;
+  border: 1px solid #cbcbcb;
+}
+
+.row__image {
+  max-width: 60%;
+}
+.row__title {
+  font-family: 'Philosopher';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 27px;
+  text-align: center;
+  color: #000000;
+  padding: 28px 0 8px 0;
+}
+.row__subtitle {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #000000;
+}
+.row__stars {
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  color: #000000;
+  padding: 8px 0;
+}
+.row__price {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 170%;
+  text-align: center;
+  color: #000000;
+}
+.row__cta {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #000000;
+  padding-top: 8px;
+}
+
+.additional__products__title {
+  font-family: 'Philosopher';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 55px;
+  line-height: 148%;
+  text-align: center;
+  color: #000000;
+  text-align: center;
+  padding: 40px 22px 30px 22px;
+  position: relative;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.swiper-button-prev-pdp3,
+.swiper-button-next-pdp3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+  z-index: 1000;
+}
+
+.swiper-button-next-pdp3 {
+  transform: rotate(180deg);
+}
+
+@media (max-width: 800px) {
+  .additional__products__title {
+    font-size: 28px;
+    line-height: 148%;
+  }
+  .row__image {
+    min-width: 100%;
+  }
+}

@@ -151,6 +151,10 @@
     font-size: 28px;
     line-height: 148%;
   }
+  .benifits__section {
+    height: 650px;
+    padding: 40px 16px;
+  }
 
   .banner__title--mobile {
     display: block;
@@ -169,5 +173,12 @@
   }
   .banner__announsment {
     text-align: center;
+  }
+  .ingredient__icon {
+    width: 120px;
+    height: 120px;
+  }
+  .swiper-slide {
+    height: fit-content;
   }
 }
