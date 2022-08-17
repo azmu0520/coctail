@@ -1,0 +1,173 @@
+:root {
+  --primaryBgColor: '#FFE9D5';
+  --secondaryBgColor: '#FFFBF7';
+  --primaryFont: 'Montserrat';
+  --secondaryFont: 'Philosopher', sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: var(--primaryFont), sans-serif;
+  font-style: normal;
+}
+
+.benifits__section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 735px;
+  padding: 80px 40px;
+  align-items: center;
+}
+
+.benifit__title {
+  font-family: 'Philosopher';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 148%;
+  text-align: center;
+  color: #000000;
+  margin-bottom: 24px;
+}
+.benifit__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 170%;
+  text-align: center;
+  color: #000000;
+  max-width: 800px;
+}
+
+.benifit__text span {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.benifits__ingredients {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 40px;
+}
+
+.ingredient__wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.ingredient__title {
+  font-family: 'Philosopher';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 36px;
+  text-align: center;
+  color: #000000;
+  margin: 24px 0 18px 0;
+}
+
+.ingredient__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 170%;
+  text-align: center;
+  color: #000000;
+}
+
+/* ---------------------  BANNER ---------------------- */
+
+.banner__section {
+  display: flex;
+  width: 100%;
+  /* height: 580px; */
+  background: #000000;
+  padding: 80px 40px;
+  column-gap: 15rem;
+}
+
+.banner__title {
+  font-family: 'Philosopher';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 78px;
+  padding-bottom: 142px;
+  color: #ffffff;
+}
+.banner__title--mobile {
+  display: none;
+  font-family: 'Philosopher';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 36px;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+.banner__subtitle {
+  display: block;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #eae5dd;
+  margin-bottom: 16px;
+}
+.banner__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 170%;
+  color: #ffffff;
+}
+.banner__announsment {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: right;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #000000;
+  border-bottom: 1px solid #cbcbcb;
+  padding: 40px 40px 17px 0;
+}
+.banner__image {
+  max-width: 50%;
+}
+@media (max-width: 800px) {
+  .benifit__title {
+    font-size: 28px;
+    line-height: 148%;
+  }
+
+  .banner__title--mobile {
+    display: block;
+  }
+  .ingredient__text {
+    font-size: 14px;
+  }
+  .banner__section {
+    flex-direction: column-reverse;
+  }
+  .banner__section {
+    padding: 40px 16px;
+  }
+  .banner__subtitle {
+    margin-top: 24px;
+  }
+  .banner__announsment {
+    text-align: center;
+  }
+}

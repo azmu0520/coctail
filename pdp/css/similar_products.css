@@ -1,0 +1,84 @@
+:root {
+  --primaryBgColor: '#FFE9D5';
+  --secondaryBgColor: '#FFFBF7';
+  --primaryFont: 'Montserrat';
+  --secondaryFont: 'Philosopher', sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: var(--primaryFont), sans-serif;
+  font-style: normal;
+}
+
+.similur__products {
+  display: flex;
+  flex-direction: column;
+}
+
+.similur__product {
+  display: flex;
+  width: 100%;
+  height: 600px;
+}
+
+.product__image__wrap {
+  width: 560px;
+  height: 100%;
+  background-image: url(/assets/images/similar1.jpg);
+  background-repeat: no-repeat;
+  background-color: #eae5dd;
+  position: relative;
+}
+
+.product__image {
+  position: absolute;
+  top: 50%;
+  right: -20%;
+  transform: translate(-20%, -50%);
+  max-width: 60%;
+}
+
+.product__detail {
+  display: flex;
+  flex-direction: column;
+  padding: 80px 40px;
+}
+
+.detail__title {
+  font-family: 'Philosopher';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 55px;
+  line-height: 148%;
+  color: #000000;
+}
+.detail__ingredient {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #000000;
+  padding: 40px 0 17px 0;
+}
+.ingredient__list {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 170%;
+  /* or 24px */
+  list-style-type: none;
+  color: #000000;
+}
+.ingredient__cta {
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 17px;
+  /* text-align: center; */
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #000000;
+  margin-top: 40px;
+}

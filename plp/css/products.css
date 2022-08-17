@@ -184,6 +184,7 @@
   padding-left: 8px;
 }
 .mobile__view__text {
+  display: none;
   font-weight: 400;
   font-size: 14px;
   line-height: 170%;
@@ -239,5 +240,8 @@
   }
   .view__image {
     max-width: 80%;
+  }
+  .mobile__view__text {
+    display: block;
   }
 }
