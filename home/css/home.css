@@ -95,6 +95,7 @@ nav ul {
   min-width: 328px;
   align-items: center;
   justify-content: space-between;
+  list-style: none;
 }
 
 .hidden {
