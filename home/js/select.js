@@ -1,9 +1,9 @@
 let selectField = document.querySelector('.select__field');
-let mobile__menu = document.querySelector('.mobile__menu');
 let selectOptions = document.querySelector('.select__options');
 let options = document.getElementsByClassName('option');
 let languageSelect = document.querySelector('.language-select');
 let selectIcon = document.querySelector('.select__icon');
+let mobile__menu = document.querySelector('.mobile__menu');
 
 selectField.prepend(options[0].firstElementChild.cloneNode(true));
 
